@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+
+	"name": "Southwest Banner Blocker",
+	"description": "Blocks the banner which Southwest wifi places on all unsecure pages.",
+	"version": "1.0.0",
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+	"background": {
+		"scripts": [ "main.js" ]
+	},
+
+	"permissions": [
+		"webRequest",
+		"webRequestBlocking",
+		"*://*.southwestwifi.com/",
+		"tabs"
+	]
+}
